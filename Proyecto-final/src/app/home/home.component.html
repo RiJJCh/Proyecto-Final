@@ -1,1 +1,5 @@
-<p>home works!</p>
+<div class="cards">
+<app-tarjeta *ngFor="let juego of informacionRecibida.results" 
+[nombreJuego]="juego.name" [imagenJuego]="juego.background_image">
+</app-tarjeta>
+</div>
