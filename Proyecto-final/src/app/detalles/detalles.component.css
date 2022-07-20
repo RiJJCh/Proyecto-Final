@@ -1,0 +1,25 @@
+.card{
+    width: 75%;
+    margin: 10px auto;
+}
+.card-body{
+    text-align: center;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.dep{
+    width: 70%;
+    margin: 10px auto;
+    border: 1px solid black;
+}
+.dep-body{
+    text-align: center;
+}
+.dep-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

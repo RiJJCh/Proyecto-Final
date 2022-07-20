@@ -1,1 +1,15 @@
-<p>detalles works!</p>
+<div class="card mb-3">
+    <img [src]="informacionRecibida.background_image" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h1 class="card-title">{{informacionRecibida.name}}</h1>
+      <p>Released: {{informacionRecibida.released | date}}</p>
+      <p>Last updated: {{informacionRecibida.updated | date}}</p>
+      <p>Rating: {{informacionRecibida.rating}}</p>
+    </div>
+    <div class="dep">
+        <div class="dep-body">
+            <h3 class="card-text">Description</h3>
+      <div [innerHtml]="informacionRecibida.description"></div>
+        </div>
+    </div>
+  </div>

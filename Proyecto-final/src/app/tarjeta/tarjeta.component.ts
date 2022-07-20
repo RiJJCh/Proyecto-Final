@@ -9,10 +9,14 @@ import { Router } from '@angular/router';
 export class TarjetaComponent implements OnInit {
   @Input() imagenJuego:string=""
   @Input() nombreJuego:string=""
+  @Input() idJuego:string=""
 
   constructor(private router:Router) { }
 
   ngOnInit(): void {
+  }
+  irADetalles(){
+    this.router.navigate(["detalles",this.idJuego])
   }
 
 }
