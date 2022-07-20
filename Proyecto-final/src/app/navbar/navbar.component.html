@@ -1,0 +1,9 @@
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand">BestGames</a>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" #valorBuscado type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" (click)="irABuscar(valorBuscado.value)" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
